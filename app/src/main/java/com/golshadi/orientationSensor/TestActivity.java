@@ -65,8 +65,12 @@ public class TestActivity extends Activity implements OrientationSensorInterface
         Log.d(TAG, "PITCH: "+ PITCH);
         Log.d(TAG, "ROLL: "+ ROLL);
 
-        mBinding.yawView.setText("Азимут: "+Math.round(AZIMUTH));
-        mBinding.pitchView.setText("Тангаж: "+Math.round(PITCH));
-        mBinding.rollView.setText("Крен: "+Math.round(ROLL));
+        final long roundedYaw = Math.round(AZIMUTH);
+        final long roundedPitch = Math.round(PITCH);
+        final long roundedRoll = Math.round(ROLL);
+
+        mBinding.yawView.setText(getString(R.string.yaw, roundedYaw));
+        mBinding.pitchView.setText(getString(R.string.pitch, roundedPitch));
+        mBinding.rollView.setText(getString(R.string.roll, roundedRoll));
     }
 }

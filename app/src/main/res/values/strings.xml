@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">android_orientation_sensor_updated</string>
+    <string name="yaw">Yaw: %1$d</string>
+    <string name="pitch">Pitch: %1$d</string>
+    <string name="roll">Roll: %1$d</string>
 </resources>

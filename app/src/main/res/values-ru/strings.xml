@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">android_orientation_sensor_updated</string>
+    <string name="yaw">Рыскание: %1$d</string>
+    <string name="pitch">Тангаж: %1$d</string>
+    <string name="roll">Вращение: %1$d</string>
+</resources>
